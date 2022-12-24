@@ -1,0 +1,38 @@
+.welcome {
+    background-color: var(--footer-section);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/photo.jpg');
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    &__header-first {
+        font-family: inherit;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--second-color);
+        max-width: 696px;
+        margin: 107px auto 30px;
+    }
+    &__button {
+        display: flex;
+        padding: 7px 38px;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1.87;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--second-color);
+        background-color: var(--logo-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        border-color: var(--logo-color);
+        margin: 30px auto 107px;
+    }
+}

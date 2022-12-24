@@ -1,0 +1,23 @@
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0;
+    &__list {
+        flex-basis: calc((100% - 5 * 30px) / 6);
+    }
+    &__icon {
+        text-align: center;
+        padding: 17.71px 32px 14.25px;
+        border: 1px solid var(--border-partner-logo);
+        border-radius: 4px;
+        fill: var(--border-partner-logo);
+        &:hover {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 250ms;
+            border: 1px solid var(--logo-color);
+            border-radius: 4px;
+            fill: var(--logo-color);
+        }
+    }
+}

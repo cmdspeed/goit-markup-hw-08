@@ -1,0 +1,17 @@
+body {
+    font-family: var(--font-main), sans-serif;
+    color: var(--main-text-color);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dp-flex {
+    display: flex;
+}

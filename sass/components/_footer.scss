@@ -1,0 +1,107 @@
+$text-decoration: underline;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 250ms;
+.footer {
+    background-color: var(--footer-section);
+    &__section {
+        background-color: var(--footer-section);
+        color: var(--second-color);
+        padding-top: 60px;
+        font-style: normal;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+    &__list-address {
+        padding: 20px 0 60px 0;
+        margin: 0;
+        font-style: normal;
+    }
+    &__logo {
+        font-family: 'Raleway';
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--second-color);
+        text-decoration: none;
+    }
+    &__adres {
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--second-color);
+        &:hover {
+            text-decoration: $text-decoration;
+            transition-timing-function: $transition-timing-function;
+            transition-duration: $transition-duration;
+        }
+    }
+    &__email {
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration-line: none;
+        color: var(--contacts-footer-color);
+        &:hover {
+            text-decoration: $text-decoration;
+            transition-timing-function: $transition-timing-function;
+            transition-duration: $transition-duration;
+        }
+    }
+    &__icon {
+        fill: var(--second-color);
+    }
+    &__input-email {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: var(--footer-section);
+        height: 50px;
+        width: 100%;
+        min-width: 358px;
+        &::placeholder {
+            color: var(--contacts-footer-color);
+            font-size: 12px;
+            line-height: 1.16;
+            padding: 15px 0 15px 16px;
+        }
+    }
+    &__button-singin {
+        display: flex;
+        background: var(--logo-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--second-color);
+        font-size: 16px;
+        line-height: 1.87;
+        padding: 10px 0 10px 42px;
+        min-width: 200px;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+    &__send {
+        padding-left: 24px;
+        height: 24px;
+    }
+}
+
+.tel {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contacts-footer-color);
+    text-decoration: none;
+    &:hover {
+        text-decoration: $text-decoration;
+        transition-timing-function: $transition-timing-function;
+        transition-duration: $transition-duration;
+    }
+}

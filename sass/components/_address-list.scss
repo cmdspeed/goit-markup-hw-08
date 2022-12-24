@@ -1,0 +1,28 @@
+.address-list {
+    display: flex;
+    &__item {
+        margin-right: 50px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__contacts {
+        color: var(--contacts-color);
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+    }
+    &__icon {
+        fill: var(--contacts-color);
+        margin-right: 10px;
+    }
+    &__icon:hover,
+    &__icon:focus {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        fill: var(--logo-color);
+    }
+}

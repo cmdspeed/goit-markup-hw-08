@@ -1,0 +1,12 @@
+.container-social {
+    &__social-header {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--second-color);
+    }
+    &__social-icon {
+        display: flex;
+        margin: 16px 0 18px 0;
+    }
+}

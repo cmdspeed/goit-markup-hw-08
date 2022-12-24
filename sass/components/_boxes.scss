@@ -1,0 +1,27 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0;
+    &__photo {
+        display: block;
+    }
+    &__item {
+        flex-basis: calc((100% - 2 * 45px) / 3);
+    }
+    &__paragraph {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 3%;
+        position: relative;
+        bottom: 70px;
+        margin: 0;
+        padding: 27px 0;
+        color: var(--paragraph-color);
+        letter-spacing: 0.03em;
+        background: var(--boxes-background);
+    }
+}

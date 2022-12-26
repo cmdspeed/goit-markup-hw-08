@@ -1,7 +1,6 @@
 @media (max-width: 767px) {
     .top-menu,
-    .address-list,
-    .link__active::after {
+    .address-list {
         display: none;
     }
 }
@@ -30,18 +29,13 @@
     }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 40px;
     background-color: var(--second-color);
     z-index: 999;
     transform: translateX(100%);
@@ -58,6 +52,37 @@
     right: 16px;
 }
 
+.link-mobile {
+    font-size: 40px;
+    line-height: 1.17;
+    &.address-list-mobile {
+        &__phone {
+            font-size: 34px;
+            line-height: 1.17;
+            color: var(--logo-color);
+        }
+        &__email {
+            font-size: 24px;
+            line-height: 1.16;
+            color: var(--contacts-color);
+        }
+    }
+}
+
+.address-list-mobile {
+    position: absolute;
+    bottom: 118px;
+    &__item {
+        margin-bottom: 32px;
+    }
+}
+
+.top-menu-mobile {
+    &__list-item {
+        margin-bottom: 32px;
+    }
+}
+
 // .mobile-menu {
 //     padding: 0;
 //     margin: 0;
@@ -69,3 +94,46 @@
 //     color: #fff;
 //     text-decoration: none;
 // }
+.social-mobile {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 32px;
+    &__item {
+        cursor: pointer;
+        color: var(--logo-color);
+        font-size: 18px;
+        line-height: 1.22;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+    &__list-item:last-child .social-mobile__item {
+        border: none;
+        padding-right: 0;
+    }
+}
+
+@media (max-height: 555px) {
+    .address-list-mobile {
+        position: relative;
+        bottom: 0;
+        &__item:last-child {
+            margin-bottom: 64px;
+        }
+    }
+    .social-mobile {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.cross:hover,
+.burger:hover {
+    fill: var(--logo-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.link__active::after {
+    display: none;
+}

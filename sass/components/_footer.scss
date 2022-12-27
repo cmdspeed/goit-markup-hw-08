@@ -105,3 +105,29 @@ $transition-duration: 250ms;
         transition-duration: $transition-duration;
     }
 }
+
+// mobile section
+@media (max-width: 480px) {
+    .footer {
+        &__mobile {
+            margin: auto;
+        }
+        &__logo {
+            font-size: 24px;
+            line-height: 1.16;
+        }
+        &__section {
+            row-gap: 0;
+        }
+        &__input-email {
+            margin: 0 15px 0 15px;
+            width: 100%;
+        }
+        &__button-singin {}
+    }
+    .container-social {
+        &__mobile {
+            text-align: center;
+        }
+    }
+}

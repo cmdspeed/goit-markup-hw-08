@@ -11,17 +11,17 @@ $transition-duration: 250ms;
         display: flex;
         flex-wrap: wrap;
         gap: 70px;
+        row-gap: 0;
     }
     &__list-address {
-        padding: 20px 0 60px 0;
-        margin: 0;
+        padding: 0;
         font-style: normal;
+        margin: 20px auto 60px;
     }
     &__logo {
         font-family: 'Raleway';
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
+        font-size: 24px;
+        line-height: 1.16;
         color: var(--second-color);
         text-decoration: none;
     }
@@ -59,13 +59,13 @@ $transition-duration: 250ms;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: var(--footer-section);
+        margin: 0 15px;
         height: 50px;
-        width: 100%;
-        min-width: 358px;
+        min-width: calc(480px - 100%);
         &::placeholder {
             color: var(--contacts-footer-color);
-            font-size: 12px;
-            line-height: 1.16;
+            font-size: 16px;
+            line-height: 1.25;
             padding: 15px 0 15px 16px;
         }
     }
@@ -83,12 +83,16 @@ $transition-duration: 250ms;
         line-height: 1.87;
         padding: 10px 0 10px 42px;
         min-width: 200px;
-        margin-left: 12px;
         cursor: pointer;
+        margin: 20px auto 60px;
     }
     &__send {
         padding-left: 24px;
         height: 24px;
+    }
+    &__mobile {
+        margin: auto;
+        text-align: center;
     }
 }
 
@@ -106,28 +110,9 @@ $transition-duration: 250ms;
     }
 }
 
-// mobile section
-@media (max-width: 480px) {
-    .footer {
-        &__mobile {
-            margin: auto;
-        }
-        &__logo {
-            font-size: 24px;
-            line-height: 1.16;
-        }
-        &__section {
-            row-gap: 0;
-        }
-        &__input-email {
-            margin: 0 15px 0 15px;
-            width: 100%;
-        }
-        &__button-singin {}
-    }
-    .container-social {
-        &__mobile {
-            text-align: center;
-        }
+.container-social {
+    &__mobile {
+        text-align: center;
+        margin: 0 auto 20px;
     }
 }

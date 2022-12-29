@@ -1,5 +1,4 @@
 .header {
-    padding: 32px 0px;
     border-bottom: var(--nav-border);
     &__main {
         flex-wrap: wrap;
@@ -15,9 +14,10 @@
     &__logo {
         text-decoration: none;
         font-family: var(--font-second);
-        font-size: 26px;
+        font-size: 24px;
         letter-spacing: 0.03em;
         color: var(--main-text-color);
-        line-height: 1.9;
+        line-height: 1.16;
+        margin: 16px 0 16px 15px;
     }
 }

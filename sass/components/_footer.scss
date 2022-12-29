@@ -59,9 +59,12 @@ $transition-duration: 250ms;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: var(--footer-section);
-        margin: 0 15px;
+        margin: 0 auto;
         height: 50px;
-        min-width: calc(480px - 100%);
+        width: 100%;
+        &-responsive {
+            min-width: 320px;
+        }
         &::placeholder {
             color: var(--contacts-footer-color);
             font-size: 16px;
@@ -114,5 +117,15 @@ $transition-duration: 250ms;
     &__mobile {
         text-align: center;
         margin: 0 auto 20px;
+    }
+}
+
+@media (min-width: 480px) {
+    .footer {
+        &__input-email {
+            &-responsive {
+                min-width: 450px;
+            }
+        }
     }
 }

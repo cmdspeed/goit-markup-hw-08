@@ -21,8 +21,10 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 0;
+    margin: auto 15px;
     &__item {
-        flex-basis: calc((100% - 3 * 40px) / 4);
+        flex-basis: 100%;
+        // flex-basis: calc((100% - 3 * 40px) / 4);
     }
     &__figure {
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -30,5 +32,17 @@
         display: flex;
         margin: 0;
         background-color: var(--second-color);
+    }
+    &__figurecaption {
+        margin: auto;
+    }
+}
+
+@media (min-width: 480px) {
+    .team-list {
+        &__img {
+            width: 450px;
+            height: 460px;
+        }
     }
 }

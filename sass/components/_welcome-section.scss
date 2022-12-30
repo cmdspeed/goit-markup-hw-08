@@ -1,6 +1,6 @@
 .welcome {
     background-color: var(--footer-section);
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/photo2x.png');
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/photo2.png');
     background-size: 480px 400px;
     background-repeat: no-repeat;
     margin: auto;
@@ -17,7 +17,7 @@
         text-transform: uppercase;
         color: var(--second-color);
         max-width: 365px;
-        margin: 118px auto 30px;
+        margin: 24px auto 30px;
     }
     &__button {
         display: flex;
@@ -33,7 +33,7 @@
         border-radius: 4px;
         cursor: pointer;
         border-color: var(--logo-color);
-        margin: 30px auto 118px;
+        margin: 30px auto 24px;
     }
 }
 

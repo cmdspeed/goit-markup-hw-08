@@ -1,10 +1,12 @@
 .address-list {
-    display: flex;
+    padding: 0;
     &__item {
-        margin-right: 50px;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
     &__item:last-child {
         margin-right: 0;
+        margin-bottom: 0;
     }
     &__contacts {
         color: var(--contacts-color);
@@ -14,13 +16,16 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         display: flex;
+        margin-right: 15px;
     }
     &__icon {
         fill: var(--contacts-color);
-        margin-right: 10px;
+        margin-right: 8px;
     }
     &__icon:hover,
-    &__icon:focus {
+    &__icon:focus,
+    &__item:hover &__icon,
+    &__item:focus &__icon {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 250ms;
         fill: var(--logo-color);

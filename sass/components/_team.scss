@@ -21,10 +21,10 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 0;
-    margin: auto 15px;
+    max-width: 225px;
+    margin: 0 auto;
     &__item {
         flex-basis: 100%;
-        // flex-basis: calc((100% - 3 * 40px) / 4);
     }
     &__figure {
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -43,9 +43,24 @@
 
 @media (min-width: 480px) {
     .team-list {
+        max-width: 450px;
+        margin: 0 auto;
         &__img {
             min-width: 450px;
             min-height: 460px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team-list {
+        max-width: 738px;
+        &__item {
+            flex-basis: calc((100% - 1 * 40px) / 2);
+        }
+        &__img {
+            min-width: 354px;
+            min-height: 361px;
         }
     }
 }

@@ -114,9 +114,13 @@ $transition-duration: 250ms;
 }
 
 .container-social {
+    margin: 0 auto;
     &__mobile {
         text-align: center;
         margin: 0 auto 20px;
+    }
+    &__social-header {
+        margin-top: 5px;
     }
 }
 
@@ -126,6 +130,14 @@ $transition-duration: 250ms;
             &-responsive {
                 min-width: 450px;
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__logo-and-address {
+            margin-left: 76px;
         }
     }
 }

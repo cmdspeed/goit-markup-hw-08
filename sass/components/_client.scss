@@ -1,5 +1,5 @@
 .client {
-    max-width: 450px;
+    max-width: 210px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -22,6 +22,22 @@
             border: 1px solid var(--logo-color);
             border-radius: 4px;
             fill: var(--logo-color);
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .client {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    .client {
+        max-width: 738px;
+        &__list {
+            flex-basis: calc((100% - 2 * 30px) / 3);
+            min-width: 226px;
         }
     }
 }

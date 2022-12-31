@@ -22,3 +22,13 @@
 .icon-container {
     margin: 0 0 30px;
 }
+
+@media (min-width: 768px) {
+    .section-card {
+        margin: 0 auto;
+        width: 738px;
+        &__item {
+            max-width: 354px;
+        }
+    }
+}

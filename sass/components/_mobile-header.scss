@@ -75,6 +75,7 @@
 .address-list-mobile {
     position: absolute;
     bottom: 118px;
+    padding: 0;
     &__item {
         margin-bottom: 32px;
     }
@@ -84,13 +85,19 @@
     &__list-item {
         margin-bottom: 32px;
     }
+    &__list {
+        margin-left: 0;
+        padding: 0;
+    }
 }
 
 .social-mobile {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 32px;
+    padding: 0;
     &__item {
         cursor: pointer;
         color: var(--logo-color);

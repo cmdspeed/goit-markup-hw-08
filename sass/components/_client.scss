@@ -1,14 +1,18 @@
 .client {
+    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 0;
+    margin: 0 auto;
     &__list {
-        flex-basis: calc((100% - 5 * 30px) / 6);
+        // flex-basis: calc((100% - 5 * 30px) / 6);
     }
     &__icon {
+        width: 210px;
+        height: 92px;
         text-align: center;
-        padding: 17.71px 32px 14.25px;
+        padding: 15px 50px;
         border: 1px solid var(--border-partner-logo);
         border-radius: 4px;
         fill: var(--border-partner-logo);

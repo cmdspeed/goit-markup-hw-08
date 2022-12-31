@@ -36,13 +36,16 @@
     &__figurecaption {
         margin: auto;
     }
+    &__img {
+        display: block;
+    }
 }
 
 @media (min-width: 480px) {
     .team-list {
         &__img {
-            width: 450px;
-            height: 460px;
+            min-width: 450px;
+            min-height: 460px;
         }
     }
 }

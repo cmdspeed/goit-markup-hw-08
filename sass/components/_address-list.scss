@@ -31,3 +31,18 @@
         fill: var(--logo-color);
     }
 }
+
+@media (min-width: 1600px) {
+    .address-list {
+        display: flex;
+        &__contacts {
+            margin-right: 30px;
+        }
+        &__item {
+            margin-bottom: 0;
+            &:last-child .address-list__contacts {
+                margin-right: 0;
+            }
+        }
+    }
+}

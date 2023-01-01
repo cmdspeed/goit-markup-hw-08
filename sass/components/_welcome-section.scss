@@ -63,8 +63,36 @@
     }
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx),
+(min-width: 1600px) {
+    .welcome {
+        background-size: 1600px 600px;
+        background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/photo2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 @media (min-width: 768px) {
     .welcome {
         padding: 92.5px 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    .welcome {
+        padding: 96px 0;
+        &__header-first {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+            margin-top: 102px;
+        }
+        &__button {
+            margin-bottom: 102px;
+        }
     }
 }

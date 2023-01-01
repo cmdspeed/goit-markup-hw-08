@@ -46,8 +46,8 @@
         max-width: 450px;
         margin: 0 auto;
         &__img {
-            min-width: 450px;
-            min-height: 460px;
+            width: 450px;
+            height: 460px;
         }
     }
 }
@@ -56,11 +56,24 @@
     .team-list {
         max-width: 738px;
         &__item {
-            flex-basis: calc((100% - 1 * 40px) / 2);
+            flex-basis: calc((100% - 30px) / 2);
         }
         &__img {
-            min-width: 354px;
-            min-height: 361px;
+            width: 354px;
+            height: 361px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .team-list {
+        max-width: 1200px;
+        &__item {
+            flex-basis: calc((100% - 3 * 40px) / 4);
+        }
+        &__img {
+            width: 270px;
+            height: 260px;
         }
     }
 }

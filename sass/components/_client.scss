@@ -5,9 +5,6 @@
     gap: 30px;
     padding-left: 0;
     margin: 0 auto;
-    // &__list {
-    //     // flex-basis: calc((100% - 5 * 30px) / 6);
-    // }
     &__icon {
         width: 210px;
         height: 92px;
@@ -38,6 +35,20 @@
         &__list {
             flex-basis: calc((100% - 2 * 30px) / 3);
             min-width: 226px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .client {
+        max-width: 1170px;
+        &__list {
+            flex-basis: calc((100% - 5 * 30px) / 6);
+            min-width: 170px;
+        }
+        &__icon {
+            width: 170px;
+            padding: 15px 30px;
         }
     }
 }

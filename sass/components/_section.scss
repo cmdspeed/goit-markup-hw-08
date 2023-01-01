@@ -8,3 +8,13 @@
         margin-bottom: 30px;
     }
 }
+
+@media (min-width: 1600px) {
+    .section {
+        padding: 94px 0;
+        &__header-second {
+            font-size: 36px;
+            line-height: 1.16;
+        }
+    }
+}

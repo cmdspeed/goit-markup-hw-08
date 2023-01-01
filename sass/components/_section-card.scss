@@ -32,3 +32,13 @@
         }
     }
 }
+
+@media (min-width: 1600px) {
+    .section-card {
+        margin: 0 auto;
+        width: 1170px;
+        &__item {
+            max-width: 270px;
+        }
+    }
+}

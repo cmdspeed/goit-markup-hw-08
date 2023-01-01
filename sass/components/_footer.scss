@@ -10,7 +10,7 @@ $transition-duration: 250ms;
         font-style: normal;
         display: flex;
         flex-wrap: wrap;
-        gap: 70px;
+        gap: 120px;
         row-gap: 0;
     }
     &__list-address {
@@ -94,7 +94,7 @@ $transition-duration: 250ms;
         height: 24px;
     }
     &__mobile {
-        margin: auto;
+        margin: 0 auto;
         text-align: center;
     }
 }
@@ -139,5 +139,35 @@ $transition-duration: 250ms;
         &__logo-and-address {
             margin-left: 76px;
         }
+    }
+}
+
+@media (min-width: 1600px) {
+    .footer {
+        &__input-email {
+            width: 358px;
+            &-responsive {
+                min-width: 358px;
+            }
+        }
+        &__logo {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+        &__button-singin {
+            margin: 0 auto;
+        }
+        &__logo-and-address {
+            margin-left: 0;
+        }
+        &__button-singin {
+            margin-left: 12px;
+        }
+        &__section {
+            gap: 70px;
+        }
+    }
+    .dp-flex {
+        display: flex;
     }
 }

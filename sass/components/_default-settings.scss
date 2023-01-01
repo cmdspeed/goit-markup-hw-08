@@ -12,6 +12,8 @@ ul {
     list-style-type: none;
 }
 
-.dp-none-mobile {
-    display: none;
+@media (max-width: 1599px) {
+    .dp-none-mobile {
+        display: none;
+    }
 }

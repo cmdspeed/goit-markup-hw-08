@@ -21,3 +21,13 @@
         margin: 26px 0 26px 15px;
     }
 }
+
+@media (min-width: 1600px) {
+    .header {
+        &__logo {
+            font-size: 26px;
+            line-height: 1.19;
+            margin: 24px auto 25px;
+        }
+    }
+}

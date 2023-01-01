@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css" type="text/css" />
     <title>WebStudio</title>
 </head>
@@ -23,8 +23,9 @@
 
                 <nav class="top-menu ">
                     <ul class="top-menu__list">
-                        <li class="top-menu__list-item"><a href="index.html " class="link "> Agencja</a></li>
-                        <li class="top-menu__list-item"> <a href="portfolio.html " class="link link__active ">
+                        <li class="top-menu__list-item"><a href="index.html " class="link "> Agencja</a>
+                        </li>
+                        <li class="top-menu__list-item"> <a href="portfolio.html " class="link link__active">
                                 Portfolio</a>
                         </li>
                         <li class="top-menu__list-item">
@@ -36,20 +37,27 @@
             <ul class="address-list">
                 <li class="address-list__item">
                     <a href="mailto:info@devstudio.com " class="link address-list__contacts "><svg
-                            class="icon address-list__icon" width="16 " height="12 ">
+                            class="icon address-list__icon " width="16 " height="12 ">
                             <use href="images/icons.svg#message "></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="address-list__item">
                     <a href="tel:+48111111111 " class="link address-list__contacts "><svg
-                            class="icon address-list__icon" width="10 " height="16 ">
+                            class="icon address-list__icon " width="10 " height="16 ">
                             <use href="images/icons.svg#phone "></use>
                         </svg>
                         +48 111 111 111</a>
                 </li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="16" class="burger">
+                    <use href="images/icons.svg#burger"></use>
+                </svg>
+            </button>
         </div>
+
+
     </header>
     <main>
         <!-- sekcja portfolio -->
@@ -69,7 +77,7 @@
 
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img.jpg" width="370" height="294" alt="Technocrack" />
+                                    <img class="filter__photo" src="images/portfolio/img.jpg" srcset="images/portfolio/img.jpg 1x, images/portfolio/img.png 2x" alt="Technocrack" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -77,7 +85,7 @@
                                     </div>
                                 </div>
                                 <h3 class="filter__header-three">Technocrack</h3>
-                                <p class="filter__paragraph">Strona internetowa</p>
+                                <p class="filter__paragraph filter__paragraph-first">Strona internetowa</p>
 
                             </figcaption>
 
@@ -87,7 +95,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-1.jpg" width="370" height="294" alt="Grafika New Orlean vs Golden Star" />
+                                    <img class="filter__photo" src="images/portfolio/img-1.jpg" srcset="images/portfolio/img-1.jpg 1x, images/portfolio/img-1.png 2x" alt="Grafika New Orlean vs Golden Star" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Grafika New Orlean jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -103,7 +111,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-2.jpg" width="370" height="294" alt="Restauracja Seafood" />
+                                    <img class="filter__photo" src="images/portfolio/img-2.jpg" srcset="images/portfolio/img-2.jpg 1x, images/portfolio/img-2.png 2x" alt="Restauracja Seafood" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Restauracja Seafood jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -119,7 +127,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-3.jpg" width="370" height="294" alt="Projekt Prime" />
+                                    <img class="filter__photo" src="images/portfolio/img-3.jpg" srcset="images/portfolio/img-3.jpg 1x, images/portfolio/img-3.png 2x" alt="Projekt Prime" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Projekt Prime jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -135,7 +143,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-4.jpg" width="370" height="294" alt="Projekt Boxes" />
+                                    <img class="filter__photo" src="images/portfolio/img-4.jpg" srcset="images/portfolio/img-4.jpg 1x, images/portfolio/img-4.png 2x" alt="Projekt Boxes" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Projekt Boxes jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -151,7 +159,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-5.jpg" width="370" height="294" alt="Inspiration has no Borders" />
+                                    <img class="filter__photo" src="images/portfolio/img-5.jpg" srcset="images/portfolio/img-5.jpg 1x, images/portfolio/img-5.png 2x" alt="Inspiration has no Borders" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Inspiration has no Borders jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -169,7 +177,7 @@
                                 <div class="filter__photo-container">
 
 
-                                    <img class="filter__photo" src="images/portfolio/img-6.jpg" width="370" height="294" alt="Magazyn Limited Edition" />
+                                    <img class="filter__photo" src="images/portfolio/img-6.jpg" srcset="images/portfolio/img-6.jpg 1x, images/portfolio/img-6.png 2x" alt="Magazyn Limited Edition" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Magazyn Limited Edition jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -185,7 +193,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-7.jpg" width="370" height="294" alt="Projekt LAB" />
+                                    <img class="filter__photo" src="images/portfolio/img-7.jpg" srcset="images/portfolio/img-7.jpg 1x, images/portfolio/img-7.png 2x" alt="Projekt LAB" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Projekt LAB jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -201,7 +209,7 @@
                         <figure class="filter__figure">
                             <figcaption>
                                 <div class="filter__photo-container">
-                                    <img class="filter__photo" src="images/portfolio/img-8.jpg" width="370" height="294" alt="Growing Business" />
+                                    <img class="filter__photo" src="images/portfolio/img-8.jpg" srcset="images/portfolio/img-8.jpg 1x, images/portfolio/img-8.png 2x" alt="Growing Business" />
                                     <div class="photo-overlay">
                                         <p class="photo-overlay__paragraph">
                                             Growing Business jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -219,7 +227,7 @@
     </main>
     <footer class="footer">
         <div class="container footer__section ">
-            <div>
+            <div class="footer__mobile footer__logo-and-address">
                 <a href=" index.html " class="footer__logo "><span class="web ">Web</span>Studio</a>
                 <address>
                     <ul class="footer__list-address">
@@ -234,8 +242,8 @@
                     </ul>
                 </address>
             </div>
-            <div class="container-social ">
-                <h4 class="container-social__social-header  ">Dołącz do nas</h4>
+            <div class="container-social footer__mobile">
+                <h4 class="container-social__social-header">Dołącz do nas</h4>
                 <div class="container-social__social-icon">
                     <div class="social-icon__container  ">
                         <svg class="footer__icon " width="20 " height="20 ">
@@ -259,10 +267,10 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <h4 class="container-social__social-header ">Zapisz się do newslettera</h4>
+            <div class="footer__mobile">
+                <h4 class="container-social__social-header container-social__mobile">Zapisz się do newslettera</h4>
                 <div class="dp-flex">
-                    <input type="email" name="email" placeholder="E-mail" class="footer__input-email">
+                    <div class="footer__input-email-responsive"> <input type="email" name="email" placeholder="E-mail" class="footer__input-email"></div>
 
                     <button class="footer__button-singin">Zapisz się
                         <div class="footer__send">
@@ -278,7 +286,62 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <!-- mobile view -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="cross" width="24" height="24">
+                <use href="images/icons.svg#cross"></use>
+
+            </svg>
+        </button>
+
+        <nav class="top-menu-mobile ">
+            <ul class="top-menu-mobile__list">
+                <li class="top-menu-mobile__list-item"><a href="index.html " class="link link-mobile ">
+                        Agencja</a>
+                </li>
+                <li class="top-menu-mobile__list-item"> <a href="portfolio.html " class="link link-mobile link__active">
+                        Portfolio</a>
+                </li>
+                <li class="top-menu-mobile__list-item">
+                    <a href="# " class="link link-mobile ">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="address-list-mobile">
+            <li class="address-list-mobile__item">
+                <a href="tel:+48111111111 " class="link link-mobile address-list-mobile__phone ">
+                    +48 111 111 111</a>
+            </li>
+            <li class="address-list-mobile__item">
+                <a href="mailto:info@devstudio.com " class="link link-mobile address-list-mobile__email ">
+                    info@devstudio.com</a>
+            </li>
+
+        </ul>
+        <ul class="social-mobile">
+            <li class="social-mobile__list-item">
+                <div class="social-mobile__container"><a href="#" class="link link-mobile social-mobile__item">Instagram</a>
+                </div>
+            </li>
+            <li class="social-mobile__list-item">
+                <div class="social-mobile__container"><a href="#" class="link link-mobile social-mobile__item">Twitter</a>
+                </div>
+            </li>
+            <li class="social-mobile__list-item">
+                <div class="social-mobile__container"><a href="#" class="link link-mobile social-mobile__item">Facebook</a>
+                </div>
+            </li>
+            <li class="social-mobile__list-item">
+                <div class="social-mobile__container"><a href="#" class="link link-mobile social-mobile__item">LinkedIn</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js "></script>
 </body>
 
 </html>

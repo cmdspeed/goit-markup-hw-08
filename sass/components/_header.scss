@@ -18,11 +18,11 @@
         letter-spacing: 0.03em;
         color: var(--main-text-color);
         line-height: 1.16;
-        margin: 26px 0 26px 15px;
+        margin: 16px 0 16px 15px;
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
     .header {
         &__logo {
             font-size: 26px;

@@ -61,7 +61,7 @@ $transition-duration: 250ms;
         background-color: var(--footer-section);
         margin: 0 auto;
         height: 50px;
-        width: 100%;
+        width: calc(100% - 60px);
         &-responsive {
             min-width: 320px;
         }

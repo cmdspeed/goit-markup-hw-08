@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-left: 0;
-    max-width: 320px;
+    max-width: 290px;
     margin: 0 auto;
     &__figure {
         display: flex;
@@ -45,7 +45,7 @@
     &__photo {
         background-color: var(--border-color-portfolio);
         display: block;
-        width: 320px;
+        width: 290px;
     }
     &__paragraph {
         border-bottom: 1px solid;

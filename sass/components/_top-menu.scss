@@ -31,13 +31,13 @@
         content: '';
         position: relative;
         display: block;
-        top: 29px;
+        top: 28px;
         height: 4px;
         width: 100%;
         border-radius: 2px;
         background-color: var(--logo-color);
         @media (min-width: 1200px) {
-            top: 29px;
+            top: 31px;
         }
     }
     &__active {

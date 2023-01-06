@@ -4,7 +4,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin: 32px 101px auto 83px;
+    margin: auto 101px auto 83px;
     &__list {
         display: flex;
         padding: 0;
@@ -31,7 +31,7 @@
         content: '';
         position: relative;
         display: block;
-        top: 7px;
+        top: 20px;
         height: 4px;
         width: 100%;
         border-radius: 2px;
